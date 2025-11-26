@@ -1,0 +1,196 @@
+# DeepSeek 药学知识蒸馏系统配置文件
+
+# 模型配置
+models:
+  teacher:
+    name: "deepseek-r1:latest"
+    temperature: 0.7
+    max_tokens: 512
+    description: "DeepSeek R1 作为教师模型，提供高质量的药学知识蒸馏信号"
+  student:
+    name: "qwen2:0.5b"
+    temperature: 0.5
+    max_tokens: 256
+    description: "Qwen 0.5B 作为学生模型，学习教师模型的知识"
+
+# 知识蒸馏配置
+distillation:
+  temperature: 3.0          # 蒸馏温度
+  alpha: 0.7               # 硬标签损失权重
+  beta: 0.3                # 软标签损失权重
+  gamma: 0.1               # 特征蒸馏权重
+  learning_rate: 1e-4      # 学习率
+  epochs: 10               # 训练轮数
+  batch_size: 4            # 批次大小
+  save_interval: 5         # 保存间隔
+  eval_interval: 2         # 评估间隔
+
+# 数据配置
+data:
+  max_length: 512          # 最大序列长度
+  train_ratio: 0.7         # 训练集比例
+  val_ratio: 0.2           # 验证集比例
+  test_ratio: 0.1          # 测试集比例
+  
+  # 药学知识类别
+  categories:
+    - "药物副作用"
+    - "药物储存"
+    - "用药原则"
+    - "慢性病管理"
+    - "儿科用药"
+    - "药理学"
+    - "药物安全"
+    - "营养补充"
+    - "精神药物"
+  
+  # 难度等级
+  difficulty_levels:
+    - "easy"
+    - "medium"
+    - "hard"
+
+# 训练配置
+training:
+  optimizer: "adam"        # 优化器类型
+  weight_decay: 0.01       # 权重衰减
+  gradient_clipping: 1.0   # 梯度裁剪
+  warmup_steps: 100        # 预热步数
+  
+  # 损失函数配置
+  loss_function: "distillation"
+  loss_weights:
+    hard_loss: 0.7
+    soft_loss: 0.3
+    attention_loss: 0.1
+    feature_loss: 0.1
+
+# 评估配置
+evaluation:
+  metrics:
+    - "similarity_to_teacher"
+    - "response_quality"
+    - "confidence_improvement"
+    - "response_completeness"
+    - "keyword_coverage"
+  
+  # 评估指标权重
+  metric_weights:
+    similarity: 0.4
+    quality: 0.3
+    confidence: 0.2
+    completeness: 0.1
+
+# Web界面配置
+web_interface:
+  server_name: "0.0.0.0"
+  server_port: 7860
+  share: false
+  debug: false
+  
+  # 界面主题
+  theme:
+    name: "soft"
+    primary_color: "#3498db"
+    secondary_color: "#2ecc71"
+
+# 日志配置
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/pharma_distillation.log"
+  max_size: "10MB"
+  backup_count: 5
+
+# 输出配置
+output:
+  base_dir: "outputs"
+  save_checkpoints: true
+  save_logs: true
+  save_plots: true
+  save_results: true
+  
+  # 文件命名格式
+  naming_format: "{timestamp}_{model}_{task}"
+
+# 性能优化
+performance:
+  mixed_precision: true    # 混合精度训练
+  gradient_checkpointing: true  # 梯度检查点
+  dataloader_num_workers: 2     # 数据加载器工作进程数
+  pin_memory: true              # 固定内存
+
+# 实验配置
+experiment:
+  name: "pharma_knowledge_distillation"
+  tags: ["knowledge_distillation", "pharma", "deepseek", "qwen"]
+  description: "DeepSeek药学知识蒸馏实验"
+  
+  # 超参数搜索
+  hyperparameter_search:
+    enabled: false
+    method: "optuna"
+    n_trials: 50
+    
+    parameters:
+      temperature:
+        type: "float"
+        low: 1.0
+        high: 10.0
+      
+      learning_rate:
+        type: "float"
+        low: 1e-5
+        high: 1e-3
+        log: true
+      
+      alpha:
+        type: "float"
+        low: 0.1
+        high: 0.9
+      
+      batch_size:
+        type: "categorical"
+        choices: [2, 4, 8, 16]
+
+# API配置
+api:
+  ollama:
+    base_url: "http://localhost:11434"
+    timeout: 30
+    max_retries: 3
+  
+  # 外部API配置（可选）
+  external_apis:
+    enabled: false
+    endpoints: {}
+
+# 安全配置
+security:
+  # 输入验证
+  input_validation: true
+  max_input_length: 1000
+  
+  # 输出过滤
+  output_filtering: true
+  forbidden_words: []
+  
+  # 速率限制
+  rate_limiting: true
+  max_requests_per_minute: 60
+
+# 部署配置
+deployment:
+  environment: "development"  # development, staging, production
+  
+  # Docker配置
+  docker:
+    enabled: false
+    image_name: "pharma-distillation"
+    container_name: "pharma-distillation-app"
+  
+  # 监控配置
+  monitoring:
+    enabled: false
+    metrics_endpoint: "/metrics"
+    health_check_endpoint: "/health"

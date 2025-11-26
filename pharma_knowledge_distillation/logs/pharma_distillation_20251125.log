@@ -1,0 +1,30 @@
+2025-11-25 18:07:04,941 - pharma_distillation - ERROR - ❌ 错误 (): 增强响应生成失败: No module named 'src.models.base_model'
+Traceback (most recent call last):
+  File "E:\data\yangsitao_pharma_knowledge_distillation\enhanced_teacher_model.py", line 134, in generate_response
+    from src.models.base_model import ModelResponse
+ModuleNotFoundError: No module named 'src.models.base_model'
+2025-11-25 18:07:48,418 - pharma_distillation - ERROR - ❌ 错误 (): 增强响应生成失败: No module named 'src.models.base_model'
+Traceback (most recent call last):
+  File "E:\data\yangsitao_pharma_knowledge_distillation\enhanced_teacher_model.py", line 134, in generate_response
+    from src.models.base_model import ModelResponse
+ModuleNotFoundError: No module named 'src.models.base_model'
+2025-11-25 18:08:16,329 - pharma_distillation - ERROR - ❌ 错误 (): 增强响应生成失败: No module named 'src.models.base_model'
+Traceback (most recent call last):
+  File "E:\data\yangsitao_pharma_knowledge_distillation\enhanced_teacher_model.py", line 158, in generate_response
+    from src.models.base_model import ModelResponse
+ModuleNotFoundError: No module named 'src.models.base_model'
+2025-11-25 18:11:59,642 - pharma_distillation - ERROR - ❌ 错误 (): 增强响应生成失败: No module named 'src.models.base_model'
+Traceback (most recent call last):
+  File "E:\data\yangsitao_pharma_knowledge_distillation\enhanced_teacher_model.py", line 134, in generate_response
+    from src.models.base_model import ModelResponse
+ModuleNotFoundError: No module named 'src.models.base_model'
+2025-11-25 18:12:44,801 - pharma_distillation - ERROR - ❌ 错误 (): 增强响应生成失败: No module named 'src.models.base_model'
+Traceback (most recent call last):
+  File "E:\data\yangsitao_pharma_knowledge_distillation\enhanced_teacher_model.py", line 134, in generate_response
+    from src.models.base_model import ModelResponse
+ModuleNotFoundError: No module named 'src.models.base_model'
+2025-11-25 18:13:24,058 - pharma_distillation - ERROR - ❌ 错误 (): 增强响应生成失败: No module named 'src.models.base_model'
+Traceback (most recent call last):
+  File "E:\data\yangsitao_pharma_knowledge_distillation\enhanced_teacher_model.py", line 158, in generate_response
+    from src.models.base_model import ModelResponse
+ModuleNotFoundError: No module named 'src.models.base_model'

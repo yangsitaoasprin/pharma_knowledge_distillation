@@ -1,0 +1,42 @@
+{
+  "epoch": 0,
+  "config": {
+    "temperature": 3,
+    "alpha": 0.7,
+    "beta": 0.3,
+    "gamma": 0.1,
+    "learning_rate": 0.0001,
+    "epochs": 5,
+    "batch_size": 4,
+    "save_interval": 5,
+    "eval_interval": 2
+  },
+  "training_history": [
+    {
+      "epoch": 0,
+      "train_metrics": {
+        "total_loss": 0.9114094053647455,
+        "hard_loss": 0.8825071475526822,
+        "soft_loss": 0.8825071475526822,
+        "learning_loss": 0.8820521235466003
+      },
+      "val_metrics": {
+        "similarity_to_teacher": 0.08405039560425269,
+        "response_quality": 0.6516666666666666,
+        "confidence_improvement": 0.016666666666666607,
+        "response_completeness": 0.0,
+        "response_length_ratio": 0.3,
+        "keyword_coverage": 0.2857142857142857,
+        "overall_score": 0.2324534915750344
+      },
+      "duration": 1.4810104370117188
+    }
+  ],
+  "best_metrics": {
+    "best_similarity": 0.08405039560425269,
+    "best_quality": 0.6516666666666666,
+    "best_confidence": 0.016666666666666607,
+    "best_epoch": 0
+  },
+  "timestamp": "2025-11-25T23:15:09.225236"
+}

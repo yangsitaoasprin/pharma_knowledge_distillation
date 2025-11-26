@@ -1,0 +1,137 @@
+[
+  {
+    "id": "pharma_001",
+    "question": "阿司匹林的常见副作用有哪些？",
+    "category": "药物副作用",
+    "difficulty": "easy",
+    "keywords": ["阿司匹林", "副作用", "胃肠道", "出血"],
+    "created_at": "2024-01-15T10:30:00Z",
+    "source": "medical_database"
+  },
+  {
+    "id": "pharma_002", 
+    "question": "如何正确储存胰岛素？",
+    "category": "药物储存",
+    "difficulty": "medium",
+    "keywords": ["胰岛素", "储存", "温度", "冷藏"],
+    "created_at": "2024-01-15T11:15:00Z",
+    "source": "clinical_guidelines"
+  },
+  {
+    "id": "pharma_003",
+    "question": "抗生素使用的基本原则是什么？",
+    "category": "用药原则", 
+    "difficulty": "medium",
+    "keywords": ["抗生素", "合理用药", "耐药性", "疗程"],
+    "created_at": "2024-01-15T14:20:00Z",
+    "source": "who_guidelines"
+  },
+  {
+    "id": "pharma_004",
+    "question": "高血压患者用药期间需要注意什么？",
+    "category": "慢性病管理",
+    "difficulty": "hard", 
+    "keywords": ["高血压", "用药注意", "血压监测", "药物相互作用"],
+    "created_at": "2024-01-15T15:45:00Z",
+    "source": "specialist_consultation"
+  },
+  {
+    "id": "pharma_005",
+    "question": "儿童用药剂量如何计算？",
+    "category": "儿科用药",
+    "difficulty": "hard",
+    "keywords": ["儿童用药", "剂量计算", "体重", "年龄"],
+    "created_at": "2024-01-15T16:30:00Z",
+    "source": "pediatric_reference"
+  },
+  {
+    "id": "pharma_006",
+    "question": "什么是药物相互作用？",
+    "category": "药理学",
+    "difficulty": "easy",
+    "keywords": ["药物相互作用", "药效", "副作用", "联合用药"],
+    "created_at": "2024-01-15T09:15:00Z",
+    "source": "pharmacology_textbook"
+  },
+  {
+    "id": "pharma_007",
+    "question": "如何识别药物过敏反应？",
+    "category": "药物安全",
+    "difficulty": "medium",
+    "keywords": ["药物过敏", "皮疹", "呼吸困难", "过敏反应"],
+    "created_at": "2024-01-15T13:20:00Z",
+    "source": "clinical_practice"
+  },
+  {
+    "id": "pharma_008",
+    "question": "维生素D缺乏应该如何补充？",
+    "category": "营养补充",
+    "difficulty": "easy",
+    "keywords": ["维生素D", "缺乏", "补充", "日晒"],
+    "created_at": "2024-01-15T08:45:00Z",
+    "source": "nutrition_guidelines"
+  },
+  {
+    "id": "pharma_009",
+    "question": "抗抑郁药物需要多长时间才能见效？",
+    "category": "精神药物",
+    "difficulty": "medium",
+    "keywords": ["抗抑郁药", "起效时间", "抑郁症", "治疗"],
+    "created_at": "2024-01-15T17:10:00Z",
+    "source": "psychiatric_reference"
+  },
+  {
+    "id": "pharma_010",
+    "question": "什么是药物的半衰期？",
+    "category": "药理学",
+    "difficulty": "hard",
+    "keywords": ["半衰期", "药物代谢", "血药浓度", "给药间隔"],
+    "created_at": "2024-01-15T12:00:00Z",
+    "source": "pharmacokinetics_textbook"
+  },
+  {
+    "id": "pharma_011",
+    "question": "布洛芬和對乙酰氨基酚有什么区别？",
+    "category": "药物比较",
+    "difficulty": "medium",
+    "keywords": ["布洛芬", "對乙酰氨基酚", "区别", "镇痛药"],
+    "created_at": "2024-01-15T18:25:00Z",
+    "source": "drug_comparison_study"
+  },
+  {
+    "id": "pharma_012",
+    "question": "如何预防药物耐药性？",
+    "category": "用药原则",
+    "difficulty": "hard",
+    "keywords": ["耐药性", "预防", "合理用药", "抗生素管理"],
+    "created_at": "2024-01-15T19:40:00Z",
+    "source": "antimicrobial_stewardship"
+  },
+  {
+    "id": "pharma_013",
+    "question": "孕妇用药需要注意什么？",
+    "category": "特殊人群用药",
+    "difficulty": "hard",
+    "keywords": ["孕妇用药", "胎儿安全", "禁忌药物", "妊娠分级"],
+    "created_at": "2024-01-15T20:15:00Z",
+    "source": "obstetric_guidelines"
+  },
+  {
+    "id": "pharma_014",
+    "question": "什么是药物的生物利用度？",
+    "category": "药理学",
+    "difficulty": "medium",
+    "keywords": ["生物利用度", "药物吸收", "口服给药", "首过效应"],
+    "created_at": "2024-01-15T21:30:00Z",
+    "source": "pharmacokinetics_reference"
+  },
+  {
+    "id": "pharma_015",
+    "question": "如何正确处理过期药物？",
+    "category": "药物安全",
+    "difficulty": "easy",
+    "keywords": ["过期药物", "处理方式", "环境保护", "安全处置"],
+    "created_at": "2024-01-15T22:45:00Z",
+    "source": "environmental_safety"
+  }
+]

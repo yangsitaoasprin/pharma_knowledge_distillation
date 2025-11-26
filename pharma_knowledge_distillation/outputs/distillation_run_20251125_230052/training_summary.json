@@ -1,0 +1,22 @@
+{
+  "total_epochs": 3,
+  "total_duration": 5.335740089416504,
+  "average_duration": 1.7785800298055012,
+  "training_metrics": {
+    "average_total_loss": 0.8919175568902448,
+    "average_learning_loss": 0.8936464548110962
+  },
+  "validation_metrics": {
+    "average_similarity": 0.04921894679931409,
+    "average_quality": 0.7043333333333333,
+    "average_confidence": -0.09666666666666668
+  },
+  "best_metrics": {
+    "best_similarity": 0.0527485907530785,
+    "best_quality": 0.7666666666666666,
+    "best_confidence": 0.0,
+    "best_epoch": 2
+  },
+  "output_directory": "outputs\\distillation_run_20251125_230052",
+  "student_model_trained": true
+}

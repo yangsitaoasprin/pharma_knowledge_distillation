@@ -1,0 +1,51 @@
+[
+  {
+    "epoch": 0,
+    "train_metrics": {
+      "total_loss": 0.8919175568902448,
+      "hard_loss": 0.8717608902235782,
+      "soft_loss": 0.8717608902235782,
+      "learning_loss": 0.8936464548110962
+    },
+    "val_metrics": {
+      "similarity_to_teacher": 0.04568930284554967,
+      "response_quality": 0.642,
+      "confidence_improvement": -0.19333333333333336,
+      "response_completeness": 0.0,
+      "response_length_ratio": 0.3,
+      "keyword_coverage": 0.21428571428571427,
+      "overall_score": 0.17220905447155319
+    },
+    "duration": 1.5737359523773193
+  },
+  {
+    "epoch": 1,
+    "train_metrics": {
+      "total_loss": 0.8919175568902448,
+      "hard_loss": 0.8717608902235782,
+      "soft_loss": 0.8717608902235782,
+      "learning_loss": 0.8936464548110962
+    },
+    "val_metrics": {},
+    "duration": 1.2847280502319336
+  },
+  {
+    "epoch": 2,
+    "train_metrics": {
+      "total_loss": 0.8919175568902448,
+      "hard_loss": 0.8717608902235782,
+      "soft_loss": 0.8717608902235782,
+      "learning_loss": 0.8936464548110962
+    },
+    "val_metrics": {
+      "similarity_to_teacher": 0.0527485907530785,
+      "response_quality": 0.7666666666666666,
+      "confidence_improvement": 0.0,
+      "response_completeness": 0.0,
+      "response_length_ratio": 0.3,
+      "keyword_coverage": 0.35714285714285715,
+      "overall_score": 0.2510994363012314
+    },
+    "duration": 1.1789624691009521
+  }
+]

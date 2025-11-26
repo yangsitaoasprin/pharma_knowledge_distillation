@@ -1,0 +1,81 @@
+[
+  {
+    "epoch": 0,
+    "train_metrics": {
+      "total_loss": 0.9114094053647455,
+      "hard_loss": 0.8825071475526822,
+      "soft_loss": 0.8825071475526822,
+      "learning_loss": 0.8820521235466003
+    },
+    "val_metrics": {
+      "similarity_to_teacher": 0.08405039560425269,
+      "response_quality": 0.6516666666666666,
+      "confidence_improvement": 0.016666666666666607,
+      "response_completeness": 0.0,
+      "response_length_ratio": 0.3,
+      "keyword_coverage": 0.2857142857142857,
+      "overall_score": 0.2324534915750344
+    },
+    "duration": 1.4810104370117188
+  },
+  {
+    "epoch": 1,
+    "train_metrics": {
+      "total_loss": 0.9114094053647455,
+      "hard_loss": 0.8825071475526822,
+      "soft_loss": 0.8825071475526822,
+      "learning_loss": 0.8820521235466003
+    },
+    "val_metrics": {},
+    "duration": 1.1668157577514648
+  },
+  {
+    "epoch": 2,
+    "train_metrics": {
+      "total_loss": 0.9114094053647455,
+      "hard_loss": 0.8825071475526822,
+      "soft_loss": 0.8825071475526822,
+      "learning_loss": 0.8820521235466003
+    },
+    "val_metrics": {
+      "similarity_to_teacher": 0.06666716562537092,
+      "response_quality": 0.5583333333333333,
+      "confidence_improvement": -0.5166666666666666,
+      "response_completeness": 0.0,
+      "response_length_ratio": 0.3,
+      "keyword_coverage": 0.21428571428571427,
+      "overall_score": 0.09083353291681506
+    },
+    "duration": 1.2219882011413574
+  },
+  {
+    "epoch": 3,
+    "train_metrics": {
+      "total_loss": 0.9114094053647455,
+      "hard_loss": 0.8825071475526822,
+      "soft_loss": 0.8825071475526822,
+      "learning_loss": 0.8820521235466003
+    },
+    "val_metrics": {},
+    "duration": 1.2471590042114258
+  },
+  {
+    "epoch": 4,
+    "train_metrics": {
+      "total_loss": 0.9114094053647455,
+      "hard_loss": 0.8825071475526822,
+      "soft_loss": 0.8825071475526822,
+      "learning_loss": 0.8820521235466003
+    },
+    "val_metrics": {
+      "similarity_to_teacher": 0.05859794097642759,
+      "response_quality": 0.7606666666666666,
+      "confidence_improvement": 0.046666666666666634,
+      "response_completeness": 0.0,
+      "response_length_ratio": 0.3,
+      "keyword_coverage": 0.2857142857142857,
+      "overall_score": 0.2609725097239043
+    },
+    "duration": 1.2491116523742676
+  }
+]
